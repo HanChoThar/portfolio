@@ -13,6 +13,7 @@ window.addEventListener('scroll',(e)=>{
   }
 });
 
+
 toggle.addEventListener('click', function(){
   if(close.classList.contains('change')){
     open.classList.add('change');

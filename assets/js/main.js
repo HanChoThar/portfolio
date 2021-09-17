@@ -3,6 +3,16 @@ let open = document.querySelector('.open');
 let close = document.querySelector('.close');
 let navList = document.querySelector('.nav__menu');
 let logo = document.querySelector('.nav__logo');
+
+window.addEventListener('scroll',(e)=>{
+  const nav = document.querySelector('.nav');
+  if(window.pageYOffset>0){
+    nav.classList.add("add-shadow");
+  }else{
+    nav.classList.remove("add-shadow");
+  }
+});
+
 toggle.addEventListener('click', function(){
   if(close.classList.contains('change')){
     open.classList.add('change');
@@ -25,4 +35,4 @@ nav__link.forEach( e => e.addEventListener('click', function(){
       navList.style.cssText = 'bottom: -100%; opacity: 0';
       logo.style.visibility = 'unset';
 }
-))
+));

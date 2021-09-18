@@ -8,6 +8,7 @@
   --body-color: #F9FAFB;
   --text-color: #6B7280;
   --title-color: #1F2937;
+  --skill-color: #F3F4F6;
 
   /* font */
   --body-font: 'Poppins', sans-serif;
@@ -343,6 +344,71 @@ img{
   .about__content{
     text-align: center;
     padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .about{
+    padding: 0 5rem 0 5rem;
+  }
+  
+  .about__content{
+    padding: 4rem;
+  }
+}
+
+                  /* skills */
+
+.skills{
+  padding: 0 1rem 0 1rem;
+  background-color: var(--skill-color);
+}
+
+.skill__main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.skills__info{
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 -1px 4px rgba(0,0,0, 0.15);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.skills__info:hover, .skills__info:focus{
+  transform: scale(1.1);
+}
+
+svg{
+  width: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill__text{
+  text-align: center;
+  font-size: var(--normal-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+@media screen and (min-width: 768px){
+  .skill__main{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 968px){
+  .skill__main{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }
 

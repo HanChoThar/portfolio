@@ -37,3 +37,11 @@ nav__link.forEach( e => e.addEventListener('click', function(){
       logo.style.visibility = 'unset';
 }
 ));
+
+
+// swiper
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

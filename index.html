@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
 </head>
@@ -34,6 +35,11 @@
           <li class="nav__item">
             <a href="#skills" class="nav__link">
               <i class="far fa-file"></i> Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="fas fa-wrench"></i> Projects
             </a>
           </li>
           <li class="nav__item">
@@ -160,10 +166,34 @@
         </div>
       </div>
     </section>
+
+            <!-- projects -->
+    <section class="projects section" id="projects">
+      <h1 style="text-align: center;padding-top: 1rem;">Projects</h1>
+      <div style="text-align: center;padding-bottom: 2rem;">That I build</div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/bee.jpg" alt="bee">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/easybank.jpg" alt="easybank">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/crowdfunding.jpg" alt="crowdfunding">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/landing.jpg" alt="landing">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  
   </main>
     
 
-
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

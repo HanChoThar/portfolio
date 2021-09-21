@@ -366,10 +366,11 @@ img{
 
 .skill__main{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
+  justify-content: center;
 }
 
 .skills__info{
@@ -377,12 +378,12 @@ img{
   padding: 1rem;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 0 -1px 4px rgba(0,0,0, 0.15);
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
 .skills__info:hover, .skills__info:focus{
-  transform: scale(1.1);
+  box-shadow: 0 -1px 4px rgba(0,0,0, 0.15);
+
 }
 
 svg{
@@ -422,6 +423,7 @@ svg{
   text-align: center;
   font-size: 18px;
   background: #fff;
+  cursor: pointer;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -445,10 +447,40 @@ svg{
   object-fit: cover;
 }
 
+.projects_note{
+  text-align: center;
+  font-size: var(--smaller-size);
+  padding-top: 1rem;
+  /* color: var(--primary-color); */
+}
+
 @media screen and (min-width: 968px){
   .swiper{
     width: 80%;
     display: flex;
     justify-content: center;
   }
+}
+
+
+            /* services */
+
+.services_container{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.services_button{
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.services_content{
+  position: relative;
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: 0.3s;
 }

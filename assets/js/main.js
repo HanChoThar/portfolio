@@ -52,3 +52,26 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// modal
+const modalViews = document.querySelectorAll('.services_modal');
+const btns = document.querySelectorAll('.services_button');
+const closy = document.querySelectorAll('.services_modal-close');
+
+let modal = (modalClick) => {
+  modalViews[modalClick].classList.add('active-modal');
+}
+
+btns.forEach( (btn, i) => {
+  btn.addEventListener('click', () => {
+    modal(i);
+  })
+});
+
+closy.forEach( (modalClose) => {
+  modalClose.addEventListener('click', ()=>{
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal');
+    })
+  })
+})

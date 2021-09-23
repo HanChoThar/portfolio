@@ -553,3 +553,49 @@ svg{
     padding-left: 15%;
   }
 }
+
+
+                  /* contact */
+.contact{
+  background-color: var(--primary-color);
+}
+
+.contact_form{
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.contact_input{
+  width:100%;
+  font-family: var(--body-font);
+  font-size: var(--normal-size);
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 25px;
+}
+
+.contact_content{
+  margin-left: 10%;
+  margin-right: 10%;
+  /* margin-left: 20%; */
+  /* transform: translateX(-50%); */
+}
+
+.btn_sub{
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: var(--primary-color);
+  font-size: var(--font-medium);
+  cursor: pointer;
+  float: right;
+  margin-right: 15%;
+}
+
+@media screen and (min-width: 768px){
+  .contact_form{
+    width: 60%;
+  }
+}

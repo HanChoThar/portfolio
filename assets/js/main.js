@@ -76,4 +76,5 @@ closy.forEach( (modalClose) => {
   })
 })
 
-// form
+// aos
+AOS.init();

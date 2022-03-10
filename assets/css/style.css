@@ -136,7 +136,7 @@ img{
   justify-content: space-between;
   height: var(--header-height);
   align-items: center;
-  background-color: white;
+  background-color: #1F2937;
   z-index: var(--z-modal);
 }
 
@@ -180,7 +180,7 @@ img{
   text-align: center;
   margin-left: 50%;
   transform: translateX(-50%);
-  background-color: white ;
+  background-color: #1F2937;
   z-index: 100;
 }
 
